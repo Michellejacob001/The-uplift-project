@@ -1,0 +1,58 @@
+#include<stdio.h>
+#include<stdlib.h>
+void main()
+{
+int op,no,i,n,flag=1,fac=1;
+
+	printf("1. odd/even \n2.prime\n3.factorail\n4.exit\n");
+	printf("enter your option");
+	scanf("%d",&op);
+	switch(op)
+	{
+		
+		
+	case 1:
+			
+			printf("enter the no");
+			scanf("%d",&no);
+			if(no%2==0)
+			printf("its even");
+			else
+			printf("its odd");
+			break;
+		
+			
+		
+			
+		case 2:
+		
+		
+	printf("Enter a natural number\n");
+	scanf("%d",&n);
+	for(i=2;i<=n/2;i++)
+	{
+		if(n%i==0)
+			flag++;
+	}
+	if(flag==1)
+		printf("Number is prime");
+	else
+	printf("Number is not prime");
+
+break;
+				
+	case 3:
+		
+		
+	printf("Enter a natural number\n");
+	scanf("%d",&n);
+	for(i=1;i<=n; i++) 
+		fac=fac*i;	
+		printf("%d",fac);
+	
+	break;
+	
+		case 4:
+		exit(0);	
+	}
+}
